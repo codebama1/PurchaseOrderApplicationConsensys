@@ -1,3 +1,5 @@
+Purchase Order Application DAPP
+
 Purchase Order Application app is most important document in Supply Chain. This  DAPP does demonstrates PO creation and state transitions of PO when buyer and seller performs respective actions in dapp. Its POC for creation and Workflow management of Purchase Order of supply chain in Decentralized  world using IPFS and Ethereum. PurchaseOrderContracts are stored in Registry (Registry.sol)and can be invoked. 
 
  Backend:
