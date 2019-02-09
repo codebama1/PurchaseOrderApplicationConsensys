@@ -1,4 +1,4 @@
-
+const path = require("path");
 const fs = require('fs');
 const mnemonic = fs.readFileSync("../MetaMaskSecret.txt").toString().trim();
 var rinkeby_infura = "https://rinkeby.infura.io/v3/8766e7c90fc9467fb6dfaddb8e6f4117";
@@ -7,8 +7,9 @@ var HDWalletProvider = require("truffle-hdwallet-provider");
 //var mnemonic = "";
 
 module.exports = {
-  See <http://truffleframework.com/docs/advanced/configuration>
-  for more about customizing your Truffle configuration!
+  // See <http://truffleframework.com/docs/advanced/configuration>
+  // for more about customizing your Truffle configuration!
+  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   compilers: {
     solc: {
       version: "0.4.25"
