@@ -1,9 +1,14 @@
 Purchase Order Application DAPP
 
-Purchase Order Application app is most important document in Supply Chain. This  DAPP does demonstrates PO creation and state transitions of PO when buyer and seller performs respective actions in dapp. Its POC for creation and Workflow management of Purchase Order of supply chain in Decentralized  world using IPFS and Ethereum. PurchaseOrderContracts are stored in Registry (Registry.sol)and can be invoked. 
+Purchase Order Application app is most important document in Supply Chain. This  DAPP does demonstrates PO creation and state transitions of PO when buyer and seller performs respective actions in dapp. Its POC for creation and Workflow management of Purchase Order of supply chain in Decentralized  world using IPFS and Ethereum. PurchaseOrderContracts are stored in Registry (Registry.sol)and can be invoked.
+
+Packages:
+$ truffle version
+Truffle v4.1.15 (core: 4.1.15)
+Solidity v0.4.25 (solc-js)
 
  Backend:
- 
+
 Following is backend workflow in dapp:
 
 •	Buyer creates the PurchaseOrder with all the details like PO number(should be unique, else replaces the existing one),  Item Name, Item count, Seller, Unit Price, Incoterm, Destination. <To match real world use case, we should add more details like arrival date , discounts, line items as PO is extensive document >
@@ -24,7 +29,7 @@ Following is backend workflow in dapp:
 
 •	Seller can retrieve the PO information and can choose to “CONFIRM” or “DECLINE” the order.
 
-•	Accoridingly PO enters “CONFIRMED” or “DECLINED” state. 
+•	Accoridingly PO enters “CONFIRMED” or “DECLINED” state.
 
 •	The status of the order can be read by both buyer and seller at any given time.
 
@@ -49,7 +54,7 @@ Second section
 •	Second section also displays just created PO’s IPFS hash.
 
 Third Section
-         
+
 •	Contains components accessible by both buyer and seller.
 
 •	Contains query input field whose input parameter should be PO number
@@ -115,7 +120,7 @@ Deploy in Rinkeby/Ropsten:
 
 •	Change to Rinkeby/Ropsten network in metamask/uport and get corresponding Rinkeby/Ropsten ethers.
 
-•	Run the command => 
+•	Run the command =>
 
 •	“truffle migrate --network rinkeby --reset --compile-all”
 
@@ -124,4 +129,3 @@ Deploy in Rinkeby/Ropsten:
 To do dry run add "--dry-run":
 
 •	“truffle migrate --network ropsten --reset --compile-all --dry-run”
-

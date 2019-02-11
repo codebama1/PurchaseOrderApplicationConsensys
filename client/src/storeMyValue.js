@@ -1,6 +1,6 @@
 import web3 from './web3';
 
-const address = '0xe9a442b29f1637f9f9eb3a35c42f581baf55a09c';
+const address = '0x07b07250d857be2b0eb45dca699d4f7b8176c067';
 
 const abi = [
   {
@@ -307,5 +307,5 @@ const abi = [
 // var fs = require('fs');
 // var jsonFile = './build/contracts/PurchaseOrder.json';
 // import myjson from './contracts/SimpleStorage.json';
-//var address1 = 
+//var address1 =
 export default new web3.eth.Contract(abi, address);
